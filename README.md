@@ -7,6 +7,5 @@ Projet personnel de création d'un site de A à Z pour une entreprise fictive qu
 https://justinersu.github.io/le-sorcier-barista/
 
 ## Auteure
-**Justine Rousseau**
-
+**Justine Rousseau**</br>
 Designer, intégratrice et développeuse web
