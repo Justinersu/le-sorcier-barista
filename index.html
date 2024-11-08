@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +31,6 @@
           <li class="menu-item">
             <a class="menu-link" href="#">Nos produits</a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">À propos</a>
-          </li>
         </ul>
       </div>
       <div class="menu-shopping-bag">
@@ -52,7 +50,8 @@
         </div>
         <div class="hero-texte">
           <h2>Une expérience <span class="woodland">café</span> pour les amateurs de jeux</h2>
-          <p>Situé en plein coeur de Montréal, venez déguster notre café en jouant à d&d, mtg et plein d’autres jeux!
+          <p>Le Sorcier Barista est un café unique au cœur de Montréal, où les amateurs de jeux peuvent savourer un café
+            artisanal tout en s'immergeant dans des jeux de rôle, de cartes à collectionner et bien plus.
           </p>
           <a href="#community"><button>Voir plus</button></a>
         </div>
@@ -72,20 +71,17 @@
           <div class="content">
             <img src="./assets/images/illustration-dices.png">
             <div class="para">
-              <p>Situé en plein coeur de Montréal, venez déguster notre café en jouant à d&d, mtg et plein d’autres
-                jeux!
+              <p>Situé en plein cœur de Montréal, Le Sorcier Barista est bien plus qu’un simple café : c’est un lieu de
+                rencontre pour les amateurs de jeux et de café de qualité.
               </p>
-            </div>
-            <div>
-              <!--Empty on purpose-->
             </div>
           </div>
         </div>
         <div class="community-text middle">
           <div class="content">
             <div class="para">
-              <p>Situé en plein coeur de Montréal, venez déguster notre café en jouant à d&d, mtg et plein d’autres
-                jeux!
+              <p> Notre espace unique est conçu pour plonger nos clients dans une ambiance magique où l’arôme du café
+                fraîchement moulu se mêle à une sélection de nombreux jeux captivants.
               </p>
             </div>
             <img src="./assets/images/illustration-cards.png">
@@ -95,22 +91,88 @@
           <div class="content">
             <img src="./assets/images/illustration-chess.png">
             <div class="para">
-              <p>Situé en plein coeur de Montréal, venez déguster notre café en jouant à d&d, mtg et plein d’autres
-                jeux!
+              <p>Que vous soyez un aventurier expérimenté ou un joueur débutant, notre café est l'endroit idéal pour se
+                retrouver entre amis et découvrir de nouveaux jeux.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Section activités -->
+    <div class="activities-wrapper">
+      <div class="swiper activities">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide bleu">
+            <h3>Nos <span class="woodland">activités</span></h3>
+            <p>
+              Participez à des sessions de Donjons & Dragons et de Magic: The Gathering, dans un espace convivial où
+              l’imagination est reine. Nos tables de jeux sont ouvertes aux joueurs de tous niveaux, avec des soirées
+              thématiques et des événements spéciaux.
+            </p>
+            <a href="#community"><button>Voir plus</button></a>
+          </div>
+          <div class="swiper-slide rose">
+            <p>Donjons & dragons</p>
+            <img src="./assets/images/picture-dnd.jpg">
+            <p>Chaque mardi, des maîtres de jeu passionnés animent des campagnes épiques, ouvertes aux joueurs de tous
+              niveaux.</p>
+          </div>
+          <div class="swiper-slide vert">
+            <p>Magic: The Gathering</p>
+            <img src="./assets/images/picture-mtg.png">
+            <p>Chaque jeudi, testez vos compétences stratégiques dans notre tournoi de Magic: The Gathering.</p>
+          </div>
+          <!-- Pagination -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Section boissons -->
+    <div class="beverages-wrapper">
+      <div class="beverages-strip to-left">
+        <span><a href="#">notre menu</a> * <a href="#">notre menu</a> * <a href="#">notre menu</a> * <a href="#">notre
+            menu</a> * <a href="#">notre menu</a> * <a href="#">notre menu</a> * <a href="#">notre menu</a> * <a
+            href="#">notre menu</a> *</span>
+      </div>
+      <div class="beverages-content">
+        <img src="./assets/images/picture-coffee-shop.jpg">
+      </div>
+      <div class="beverages-strip to-right">
+        <span><a href="#">notre menu</a> * <a href="#">notre menu</a> * <a href="#">notre menu</a> * <a href="#">notre
+            menu</a> * <a href="#">notre menu</a> * <a href="#">notre menu</a> * <a href="#">notre menu</a> * <a
+            href="#">notre menu</a> *</span>
+      </div>
+    </div>
   </main>
 
   <!-- Pied de page -->
   <footer>
-
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <div class="menu-site-link">
+          <a class="site-link" href="#">
+            <img src="./assets/images/site-logo.png" alt="logo">
+          </a>
+        </div>
+        <p class="footer-texte">
+          Ce site est le projet entièrement fictif de Justine Rousseau</br>
+          <em>pst.... ce serait une tellement bonne idée si quelqu’un veut s’y lancer</em>
+        </p>
+        <div class="footer-icons">
+          <a href="https://github.com/Justinersu/le-sorcier-barista" target="_blank">
+          <img src="./assets/images/icons/icon-github.png"></a>
+          <a href="https://www.linkedin.com/in/justinersu05/" target="_blank"><img src="./assets/images/icons/icon-linkedin.png"></a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

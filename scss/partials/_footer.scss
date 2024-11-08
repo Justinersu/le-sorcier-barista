@@ -1,1 +1,32 @@
 @use "../modules/variables";
+
+footer {
+    width: 100%;
+}
+
+.footer-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    p {
+        font-size: 0.9rem;
+        line-height: 15px;
+        font-weight: 400;
+    }
+}
+
+.footer-icons {
+    margin-left: auto;
+    img {
+        width: 32px;
+        text-align: right;
+    }
+}

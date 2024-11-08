@@ -91,19 +91,8 @@
         }
     }
     p {
-        line-height: 20px;
         margin-top: 1rem;
-        font-size: 1rem;
-        font-weight: 300;
-        letter-spacing: -1px;
         padding-left: 20%;
-        @media screen and (min-width: variables.$tablet) {
-            font-size: 1.5rem;
-            line-height: 28px;
-        }
-        @media screen and (min-width: variables.$xl) {
-            font-size: 2rem;
-            line-height: 40px;
-        }
+
     }
 }

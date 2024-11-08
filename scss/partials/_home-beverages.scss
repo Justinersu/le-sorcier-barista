@@ -1,0 +1,54 @@
+@use "../modules/variables";
+
+.beverages-wrapper {
+    position: relative;
+    top: 100px;
+    width: 100vw;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+
+.beverages-content {
+    height: 60vh;
+    background: linear-gradient(180deg, variables.$vert 30%, variables.$rose 100%);
+    width: 100%;
+    img {
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+        width: 50%;
+    }
+}
+
+
+.beverages-strip {
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    white-space: no-wrap;
+    overflow-x: hidden;
+    a,
+    span {
+        white-space: nowrap;
+        color: variables.$beige;
+        font-family: "Poppins", sans-serif;
+        width: 80%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: transparent;
+        -webkit-text-stroke: 1px variables.$beige;
+    }
+    &.to-left {
+        background-color: variables.$vert;
+    }
+    &.to-right {
+        background-color: variables.$rose;
+    }
+}
