@@ -8,4 +8,5 @@ https://justinersu.github.io/le-sorcier-barista/
 
 ## Auteure
 **Justine Rousseau**
+
 Designer, intégratrice et développeuse web
