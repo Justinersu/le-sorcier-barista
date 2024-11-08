@@ -1,0 +1,81 @@
+@use "../modules/variables";
+
+.hero-wrapper {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 93vh;
+    background: linear-gradient(180deg, variables.$bleu 30%, variables.$beige 100%);
+    border-radius: 60px 60px 0 0;
+}
+
+.hero-contenu {
+    max-width: variables.$contenu-width;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.hero-titre {
+    white-space: nowrap;
+    width: 100%;
+    color: variables.$beige;
+    font-family: Woodland Bold;
+    letter-spacing: -0.8vw;
+    text-align: center;
+    font-size: 5.5vw;
+    overflow-x: hidden;
+    height: 120px;
+    line-height: 6vw;
+    text-transform: uppercase;
+    @media screen and (min-width: variables.$contenu-width) {
+        font-size: 61.2px;
+        line-height: 65px;
+        letter-spacing: -3.5px;
+    }
+}
+
+.hero-image {
+    position: absolute;
+    bottom: -12px;
+    left: -40vw;
+}
+
+.hero-image img {
+    width: 100vw;
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+    }
+    @media screen and (max-height: 800px) {
+        width: 1000px;
+    }
+}
+
+.hero-texte {
+    position: relative;
+    text-align: right;
+    width: 80%;
+    margin-left: auto; 
+    margin-top: 3rem;
+    margin-right: 1rem;
+    color: variables.$beige;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    h2 {
+        font-size: 3.5rem;
+        line-height: 55px;
+        span {
+            font-family: "Woodland Bold";
+        }
+    }
+    p {
+        line-height: 32px;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: -1px;
+        padding-left: 20%;
+    }
+}

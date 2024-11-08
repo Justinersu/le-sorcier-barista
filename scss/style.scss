@@ -1,0 +1,63 @@
+/*--- Importation des partials générales ---*/
+@use "../scss/modules/mixins";
+@use "../scss/modules/variables";
+
+/*--- Importation des partials composantes ---*/
+@use "../scss/partials/navbar";
+@use "../scss/partials/hero";
+
+/*--- Importation des fonts ---*/
+@font-face {
+    font-family: "Woodland Bold";
+    src: url("./assets/fonts/PPWoodland-Bold.otf") format("opentype");
+  }
+
+/*--- Styles generaux ---*/
+* {
+    margin: 0;
+}
+
+body {
+    background: variables.$beige;
+    height: 300vh;
+}
+
+header {
+    background: variables.$beige;
+    width: 100vw;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+button {
+    width: auto;
+    background-color: variables.$rose;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 4px variables.$rose-pale solid;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    &:after {
+        content: "";
+        display: inline-block;
+        width:25px;
+        height: 25px;
+        background: url('./assets/images/icons/icone-fleche-vers-bas.png') no-repeat;
+        background-size: contain;
+        background-position: 100%;
+        margin-left: 0.5rem;
+    }
+    &:hover {
+        border: 4px variables.$rose solid;
+        background-color: variables.$rose-pale;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+}

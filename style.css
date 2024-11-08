@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*--- Importation des partials générales ---*/
+/*--- Importation des partials composantes ---*/
+.menu {
+  top: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.05rem;
+  line-height: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: #1E1E1E;
+  cursor: pointer;
+}
+
+.site-link img {
+  width: 50px;
+}
+
+.menu-shopping-bag {
+  margin-left: auto;
+}
+.menu-shopping-bag img {
+  height: 42px;
+}
+
+.menu-item.active {
+  opacity: 100%;
+}
+
+.menu-item {
+  margin-left: -20px;
+  display: inline;
+  margin-right: 40px;
+  opacity: 50%;
+  transition: opacity 0.2s;
+}
+.menu-item:hover, .menu-item:focus {
+  opacity: 100%;
+}
+
+.hero-wrapper {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 93vh;
+  background: linear-gradient(180deg, #5FA2BD 30%, #F9F1DE 100%);
+  border-radius: 60px 60px 0 0;
+}
+
+.hero-contenu {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.hero-titre {
+  white-space: nowrap;
+  width: 100%;
+  color: #F9F1DE;
+  font-family: Woodland Bold;
+  letter-spacing: -0.8vw;
+  text-align: center;
+  font-size: 5.5vw;
+  overflow-x: hidden;
+  height: 120px;
+  line-height: 6vw;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero-titre {
+    font-size: 61.2px;
+    line-height: 65px;
+    letter-spacing: -3.5px;
+  }
+}
+
+.hero-image {
+  position: absolute;
+  bottom: -12px;
+  left: -40vw;
+}
+
+.hero-image img {
+  width: 100vw;
+}
+@media screen and (min-width: 1600px) {
+  .hero-image img {
+    width: 1600px;
+  }
+}
+@media screen and (max-height: 800px) {
+  .hero-image img {
+    width: 1000px;
+  }
+}
+
+.hero-texte {
+  position: relative;
+  text-align: right;
+  width: 80%;
+  margin-left: auto;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  color: #F9F1DE;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.hero-texte h2 {
+  font-size: 3.5rem;
+  line-height: 55px;
+}
+.hero-texte h2 span {
+  font-family: "Woodland Bold";
+}
+.hero-texte p {
+  line-height: 32px;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: -1px;
+  padding-left: 20%;
+}
+
+/*--- Importation des fonts ---*/
+@font-face {
+  font-family: "Woodland Bold";
+  src: url("./assets/fonts/PPWoodland-Bold.otf") format("opentype");
+}
+/*--- Styles generaux ---*/
+* {
+  margin: 0;
+}
+
+body {
+  background: #F9F1DE;
+  height: 300vh;
+}
+
+header {
+  background: #F9F1DE;
+  width: 100vw;
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+button {
+  width: auto;
+  background-color: #EA667E;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: -2px;
+  border: 4px #F2BCC6 solid;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+}
+button:after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("./assets/images/icons/icone-fleche-vers-bas.png") no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  margin-left: 0.5rem;
+}
+button:hover {
+  border: 4px #EA667E solid;
+  background-color: #F2BCC6;
+  cursor: pointer;
+}
+button a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
