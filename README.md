@@ -1,1 +1,4 @@
-# le-sorcier-barista
+# Le sorcier barista
+
+## Auteur
+**Justine Rousseau**
