@@ -1,0 +1,82 @@
+@use "../modules/variables";
+
+.community-wrapper {
+    overflow-x: hidden;
+    height: 180vh;
+}
+
+.community-content {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 220px 180px 150px 180px;
+    gap: 1rem;
+}
+
+.community-title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.community-text {
+    position: relative;
+    width: 105vw;
+    left: -2.5vw;
+    overflow-x: hidden;
+    overflow: visible;
+}
+
+.community-text .content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: variables.$contenu-width;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+    top: -20px;
+    .para {
+        font-size: 1.4rem;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        rotate: -5deg;
+        width: 40%;
+        color: variables.$beige;
+        letter-spacing: -1px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+}
+
+.community-text.top {
+    background-color: variables.$bleu;
+    rotate: 5deg;
+    z-index: 1;
+}
+
+.community-text.middle {
+    background-color: variables.$beige;
+    .content {
+        .para {
+            color: variables.$noir;
+            rotate: 0deg;
+        }
+        z-index: 2;
+    }
+}
+
+.community-text.bottom {
+    background-color: variables.$bleu;
+    rotate: -2deg;
+    .content .para {
+        rotate: 2deg;
+    }
+}
