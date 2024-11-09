@@ -2,8 +2,13 @@
 
 .community-wrapper {
     overflow-x: hidden;
-    height: 828px;
-    margin-bottom: 80px;
+    height: auto;
+    margin-bottom: 100px;
+    overflow-y: hidden;
+    @media screen and (min-width: variables.$tablet) {
+        height: 828px;
+        margin-bottom: 80px;
+    }
 }
 
 .community-content {
