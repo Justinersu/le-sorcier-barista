@@ -8,7 +8,6 @@
     margin-bottom: 100px;
 }
 
-
 .beverages-content {
     height: 60vh;
     background: linear-gradient(180deg, variables.$vert 30%, variables.$rose 100%);
@@ -30,7 +29,6 @@
         }
     }
 }
-
 
 .beverages-strip {
     width: 100vw;
@@ -83,32 +81,66 @@
         align-items: center;
         text-align: center;
         gap: 2rem;
-    }
-    .top {
         p {
             font-size: 1.8rem;
             font-weight: 800;
             line-height: 30px;
+            paint-order: stroke fill;
+            @media screen and (min-width: variables.$laptop-l) {
+                font-size: 2.5rem;
+                line-height: 40px;
+            }
+        }
+    }
+    .top {
+        p {
             color: variables.$rose;
             -webkit-text-stroke: 5px variables.$rose-pale;
-            paint-order: stroke fill;
+            animation: textRotation 2s linear infinite;
+            @media screen and (min-width: variables.$laptop-l) {
+                -webkit-text-stroke: 10px variables.$rose-pale;
+            }
         }
         img {
             width: 100px;
+            animation: textRotation 2s linear infinite reverse;
+            @media screen and (min-width: variables.$laptop-l) {
+                width: 150px;
+            }
         }
     }
     .bottom {
         p {
-            font-size: 1.8rem;
-            font-weight: 800;
-            line-height: 30px;
             color: variables.$vert;
             -webkit-text-stroke: 5px variables.$vert-pale;
-            paint-order: stroke fill;
+            animation: textRotation 2s linear infinite reverse;
+            @media screen and (min-width: variables.$laptop-l) {
+                -webkit-text-stroke: 10px variables.$vert-pale;
+            }
+            
         }
         img {
             height: 100px;
+            animation: textRotation 2s linear infinite;
+            @media screen and (min-width: variables.$laptop-l) {
+                height: 150px;
+            }
         }
     }
+}
 
+// --- Animations textes et images ---
+@keyframes textRotation {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }

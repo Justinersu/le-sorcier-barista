@@ -70,7 +70,7 @@
   font-family: Woodland Bold;
   letter-spacing: -0.8vw;
   text-align: center;
-  font-size: 5.5vw;
+  font-size: 5vw;
   overflow-x: hidden;
   height: 114px;
   line-height: 65px;
@@ -163,7 +163,7 @@
 
 .community-wrapper {
   overflow-x: hidden;
-  height: 900px;
+  height: 820px;
 }
 
 .community-content {
@@ -321,7 +321,6 @@
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 38px;
-  width: 50%;
 }
 .swiper.activities .swiper-slide button:after {
   rotate: -90deg;
@@ -433,29 +432,71 @@
   text-align: center;
   gap: 2rem;
 }
-.beverages-items .top p {
+.beverages-items .items p {
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 30px;
+  paint-order: stroke fill;
+}
+@media screen and (min-width: 1440px) {
+  .beverages-items .items p {
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+}
+.beverages-items .top p {
   color: #EA667E;
   -webkit-text-stroke: 5px #F2BCC6;
-  paint-order: stroke fill;
+  animation: textRotation 2s linear infinite;
+}
+@media screen and (min-width: 1440px) {
+  .beverages-items .top p {
+    -webkit-text-stroke: 10px #F2BCC6;
+  }
 }
 .beverages-items .top img {
   width: 100px;
+  animation: textRotation 2s linear infinite reverse;
+}
+@media screen and (min-width: 1440px) {
+  .beverages-items .top img {
+    width: 150px;
+  }
 }
 .beverages-items .bottom p {
-  font-size: 1.8rem;
-  font-weight: 800;
-  line-height: 30px;
   color: #A4C268;
   -webkit-text-stroke: 5px #CFE5A4;
-  paint-order: stroke fill;
+  animation: textRotation 2s linear infinite reverse;
+}
+@media screen and (min-width: 1440px) {
+  .beverages-items .bottom p {
+    -webkit-text-stroke: 10px #CFE5A4;
+  }
 }
 .beverages-items .bottom img {
   height: 100px;
+  animation: textRotation 2s linear infinite;
+}
+@media screen and (min-width: 1440px) {
+  .beverages-items .bottom img {
+    height: 150px;
+  }
 }
 
+@keyframes textRotation {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 footer {
   width: 100%;
 }
