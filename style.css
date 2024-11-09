@@ -356,14 +356,26 @@
   height: 60vh;
   background: linear-gradient(180deg, #A4C268 30%, #EA667E 100%);
   width: 100%;
+  overflow: hidden;
 }
-.beverages-content img {
+@media screen and (min-width: 768px) {
+  .beverages-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+}
+.beverages-content .picture-coffee-shop {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-  height: 100%;
-  width: 50%;
+  width: 100%;
+  max-height: 500px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .beverages-content .picture-coffee-shop {
+    display: block;
+  }
 }
 
 .beverages-strip {
@@ -395,6 +407,53 @@
 }
 .beverages-strip.to-right {
   background-color: #EA667E;
+}
+
+.beverages-items {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .beverages-items {
+    width: 50%;
+    right: 0;
+  }
+}
+.beverages-items .items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.beverages-items .top p {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 30px;
+  color: #EA667E;
+  -webkit-text-stroke: 5px #F2BCC6;
+  paint-order: stroke fill;
+}
+.beverages-items .top img {
+  width: 100px;
+}
+.beverages-items .bottom p {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 30px;
+  color: #A4C268;
+  -webkit-text-stroke: 5px #CFE5A4;
+  paint-order: stroke fill;
+}
+.beverages-items .bottom img {
+  height: 100px;
 }
 
 footer {
