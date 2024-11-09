@@ -72,8 +72,8 @@
   text-align: center;
   font-size: 5.5vw;
   overflow-x: hidden;
-  height: 120px;
-  line-height: 6vw;
+  height: 114px;
+  line-height: 65px;
   text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
@@ -171,18 +171,30 @@
   max-width: 100%;
   height: auto;
   display: grid;
-  grid-template-rows: 220px 180px 150px 180px;
+  line-height: 40px;
+  grid-template-rows: 1.5fr 1.2fr 1fr 1.2fr;
+  justify-items: center;
   gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .community-content {
+    grid-template-rows: 220px 180px 150px 180px;
+  }
 }
 
 .community-title {
   width: 100vw;
-  max-width: 100%;
-  font-size: 1.7rem;
+  max-width: 90%;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+.community-title h2 {
+  position: relative;
+  left: -2.5vw;
 }
 
 .community-text {
@@ -191,28 +203,48 @@
   left: -2.5vw;
   overflow-x: hidden;
   overflow: visible;
+  display: flex;
+  align-items: center;
 }
 
 .community-text .content {
-  margin: 0 auto;
-  width: 100%;
   max-width: 1200px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  gap: 50px;
-  top: -20px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .community-text .content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    top: -20px;
+    position: relative;
+  }
 }
 .community-text .content .para {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
   rotate: -5deg;
-  width: 40%;
+  width: 100%;
   color: #F9F1DE;
 }
+@media screen and (min-width: 768px) {
+  .community-text .content .para {
+    width: 50%;
+  }
+}
 .community-text .content img {
-  width: 250px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .community-text .content img {
+    width: 250px;
+    display: block;
+  }
 }
 
 .community-text.top {
@@ -240,8 +272,14 @@
   rotate: 2deg;
 }
 .community-text.bottom img {
-  height: 250px;
+  height: 30vw;
   width: auto;
+}
+@media screen and (min-width: 1024px) {
+  .community-text.bottom img {
+    height: 250px;
+    width: auto;
+  }
 }
 
 .activities-wrapper {
@@ -415,12 +453,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 65px;
 }
 
 p {
   font-family: "Poppins", sans-serif;
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: -1px;
   line-height: 25px;

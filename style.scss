@@ -36,12 +36,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    height: 65px;
 }
 
 p {
     font-family: "Poppins", sans-serif;
     width: 80%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: -1px;
     line-height: 25px;
