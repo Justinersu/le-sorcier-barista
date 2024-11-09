@@ -66,7 +66,10 @@
     width: 95vw;
     margin-left: auto; 
     margin-top: -2vh;
-    margin-right: 1rem;
+    @media screen and (max-width: variables.$contenu-width) {
+        margin: 1rem 0;
+    }
+
     color: variables.$beige;
     font-family: "Poppins", sans-serif;
     display: flex;

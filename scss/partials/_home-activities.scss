@@ -5,13 +5,12 @@
     max-width: variables.$contenu-width;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 1rem;
 }
 
 .swiper.activities {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    @media screen and (max-width: variables.$contenu-width) {
+        margin: 1rem;
+    }
     .swiper-slide {
         display: flex;
         flex-direction: column;
