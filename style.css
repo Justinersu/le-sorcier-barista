@@ -672,7 +672,7 @@ footer {
   }
 }
 .products-search input {
-  background-image: url(../assets/images/icons/icon-search.png);
+  background-image: url("./assets/images/icons/icon-search.png");
   background-position: 12px;
   background-size: 22px;
   background-repeat: no-repeat;
