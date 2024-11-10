@@ -501,7 +501,12 @@ header {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  gap: 2rem;
+  gap: 3rem;
+}
+@media screen and (min-width: 375px) {
+  .beverages-items .items {
+    gap: 5rem;
+  }
 }
 .beverages-items .items p {
   font-size: 1.8rem;

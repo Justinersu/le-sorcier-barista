@@ -82,7 +82,10 @@
         flex-direction: row;
         align-items: center;
         text-align: center;
-        gap: 2rem;
+        gap: 3rem;
+        @media screen and (min-width: variables.$mobile-m) {
+            gap: 5rem;
+        }
         p {
             font-size: 1.8rem;
             font-weight: 800;
