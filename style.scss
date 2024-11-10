@@ -53,6 +53,9 @@ p {
     @media screen and (min-width: variables.$tablet) {
         line-height: 28px;
     }
+    @media screen and (min-width: variables.$laptop-l) {
+        font-size: 1.15rem;
+    }
     @media screen and (min-width: variables.$xl) {
         line-height: 40px;
     }
@@ -108,4 +111,8 @@ button {
 
 .woodland {
     font-family: "Woodland Bold";
+}
+
+.bold {
+    font-weight: 500;
 }

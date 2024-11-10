@@ -398,8 +398,8 @@ header {
   background-color: #5FA2BD;
 }
 .swiper-slide.bleu p {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .swiper-slide.vert {
@@ -783,6 +783,11 @@ p {
     line-height: 28px;
   }
 }
+@media screen and (min-width: 1440px) {
+  p {
+    font-size: 1.15rem;
+  }
+}
 @media screen and (min-width: 2560px) {
   p {
     line-height: 40px;
@@ -845,4 +850,8 @@ button a {
 
 .woodland {
   font-family: "Woodland Bold";
+}
+
+.bold {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
