@@ -19,6 +19,25 @@ const swiper = new Swiper('.swiper.activities', {
   }
 });
 
+//--- Barre de recherche ---
+let searchInput = document.getElementById('searchInput');
+let products = document.querySelectorAll(".products-name");
+
+function searchProduct() {
+  let filter = searchInput.value.toUpperCase().replaceAll(' ','');
+  products.forEach((product) => {
+    let productValue = product.innerHTML.toUpperCase().replaceAll(' ','');
+    console.log(productValue);
+    console.log(filter);
+
+      if (productValue.indexOf(filter) > -1) {
+        product.parentElement.style.display = "flex";
+      } else {
+        product.parentElement.style.display = "none";
+      }
+  });
+}
+
 //-- Animation bande 404--
 //trouvé sur https://getbutterfly.com/javascript-marquee-a-collection-of-scrolling-text-snippets/
 function initializeMarquee() {
