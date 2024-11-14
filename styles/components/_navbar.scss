@@ -1,0 +1,61 @@
+@use "../base/variables";
+
+header {
+    background: variables.$beige;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 65px;
+}
+
+.menu {
+    max-width: variables.$contenu-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.05rem;
+    line-height: 0;
+    @media screen and (max-width: variables.$contenu-width) {
+        padding: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: variables.$noir;
+        cursor: pointer;
+    }
+}
+
+.site-link img {
+    width: 32px;
+}
+
+.menu-item a {
+    opacity: 50%;
+}
+
+.menu-item a.active {
+    opacity: 100%;
+}
+
+.menu-shopping-bag {
+    margin-left: auto;
+    img {
+        height: 28px;
+    }
+}
+
+.menu-item {
+    margin-left: -20px;
+    display: inline;
+    margin-right: 40px;
+    transition: opacity 0.2s;
+    &:hover,
+    &:focus {
+        opacity: 100%;
+    }
+}

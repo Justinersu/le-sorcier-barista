@@ -1,0 +1,117 @@
+/*--- Importation des components générales ---*/
+@use "./base/variables";
+
+/*--- Importation des components composantes ---*/
+@use "./components/navbar";
+@use "./components/home-hero";
+@use "./components/home-community";
+@use "./components/home-activities";
+@use "./components/home-beverages";
+@use "./components/footer";
+@use "./pages/products";
+
+/*--- Importation des fonts ---*/
+@font-face {
+    font-family: "Woodland Bold";
+    src: url(./assets/fonts/PPWoodland-Bold.otf) format("opentype");
+}
+
+/*--- Styles généraux ---*/
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+body {
+    background: variables.$beige;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 25px;
+    @media screen and (min-width: variables.$tablet) {
+        line-height: 28px;
+    }
+    @media screen and (min-width: variables.$laptop-l) {
+        font-size: 1.15rem;
+    }
+    @media screen and (min-width: variables.$xl) {
+        line-height: 40px;
+    }
+}
+
+button {
+    width: auto;
+    background-color: variables.$rose;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 4px variables.$rose-pale solid;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    transition:
+        background-color 0.5s,
+        border 0.5s;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url("./assets/images/icone-fleche-vers-bas.png") no-repeat;
+        background-size: contain;
+        background-position: 100%;
+        margin-left: 0.5rem;
+        @media screen and (min-width: variables.$tablet) {
+            width: 20px;
+            height: 20px;
+        }
+        @media screen and (min-width: variables.$xl) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &:hover {
+        border: 4px variables.$rose solid;
+        background-color: variables.$rose-pale;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+    @media screen and (min-width: variables.$tablet) {
+        font-size: 1.5rem;
+    }
+    @media screen and (min-width: variables.$xl) {
+        font-size: 2.5rem;
+    }
+}
+
+.woodland {
+    font-family: "Woodland Bold";
+}
+
+.bold {
+    font-weight: 500;
+}
