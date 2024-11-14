@@ -1,8 +1,11 @@
-# React + Vite
+# Le sorcier barista
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+Projet personnel de création d'un site avec React pour une entreprise fictive qui combine café et boutique de jeux. Pour l'instant, seule les pages statiques de l'accueil et des produits sont terminées, mais j'envisage d'ajouter prochainement un panier d'achat.
 
-Currently, two official plugins are available:
+## URL
+https://justinersu.github.io/le-sorcier-barista/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Auteure
+**Justine Rousseau**</br>
+Designer, intégratrice et développeuse web
