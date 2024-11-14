@@ -1,4 +1,58 @@
-const Products = () => {
+import IconShoppingBag from '../assets/images/icons/icon-shopping-bag.png';
+import Catan from '../assets/images/products/products-catan.png';
+import SevenWonders from '../assets/images/products/products-seven-wonders.png';
+import HereToSlay from '../assets/images/products/products-here-to-slay.png';
+import Jaipur from '../assets/images/products/products-jaipur.png';
+import ArkhamHorror from '../assets/images/products/products-arkham-horror.png';
+import Wingspan from '../assets/images/products/products-Wingspan.png';
+
+function Products() {
+    const products = [{
+        id: 0,
+        name: "Catan",
+        price: "59,99",
+        image: Catan,
+    }, {
+        id: 1,
+        name: "7 Wonders",
+        price: "49,99",
+        image: SevenWonders,
+    }, {
+        id: 2,
+        name: "Here to slay",
+        price: "39,99",
+        image: HereToSlay,
+    }, {
+        id: 3,
+        name: "Jaipur",
+        price: "29,99",
+        image: Jaipur,
+    }, {
+        id: 4,
+        name: "Arkham Horror",
+        price: "79,99",
+        image: ArkhamHorror,
+    }, {
+        id: 5,
+        name: "Wingpsan",
+        price: "69,99",
+        image: Wingspan,
+    }]
+
+    const listProducts = products.map(product =>
+        <div className="products-cell">
+            <img src={product.image} />
+            <p className="products-name">{product.name}</p>
+            <div className="products-price">
+                <p className="price">{product.price}</p>
+                <input type="number" value="1" id="quantity" />
+                <div className="btn-add">
+                    <img src={IconShoppingBag} />
+                </div>
+            </div>
+        </div>
+    );
+
     return (
         <div className="products-wrapper">
             <div className="products-title">
@@ -7,75 +61,10 @@ const Products = () => {
             <div className="products-search"><input id="searchInput" onKeyUp="searchProduct()" type="text"
                 placeHolder="Chercher un produit..." /></div>
             <div className="products-grid">
-                <div className="products-cell">
-                    <img src="./assets/images/products/products-catan.png" />
-                    <p className="products-name">Catan</p>
-                    <div className="products-price">
-                        <p className="price">59,99$</p>
-                        <input type="number" value="1" id="quantity" />
-                        <div className="btn-add">
-                            <img src="./assets/images/icons/icon-shopping-bag.png" />
-                        </div>
-                    </div>
-                </div>
-                <div className="products-cell">
-                    <img src="./assets/images/products/products-seven-wonders.png" />
-                    <p className="products-name">7 Wonders</p>
-                    <div className="products-price">
-                        <p className="price">49,99$</p>
-                        <input type="number" value="1" id="quantity" />
-                        <div className="btn-add">
-                            <img src="./assets/images/icons/icon-shopping-bag.png" />
-                        </div>
-                    </div>
-                </div>
-                <div className="products-cell">
-                    <img src="./assets/images/products/products-here-to-slay.png" />
-                    <p className="products-name">Here to Slay</p>
-                    <div className="products-price">
-                        <p className="price">39,99$</p>
-                        <input type="number" value="1" id="quantity" />
-                            <div className="btn-add">
-                                <img src="./assets/images/icons/icon-shopping-bag.png" />
-                            </div>
-                    </div>
-                </div>
-                <div className="products-cell">
-                    <img src="./assets/images/products/products-jaipur.png" />
-                    <p className="products-name">Jaipur</p>
-                    <div className="products-price">
-                        <p className="price">29,99$</p>
-                        <input type="number" value="1" id="quantity" />
-                        <div className="btn-add">
-                            <img src="./assets/images/icons/icon-shopping-bag.png" />
-                        </div>
-                    </div>
-                </div>
-                <div className="products-cell">
-                    <img src="./assets/images/products/products-arkham-horror.png" />
-                    <p className="products-name">Arkham Horror</p>
-                    <div className="products-price">
-                        <p className="price">79,99$</p>
-                        <input type="number" value="1" id="quantity" />
-                        <div className="btn-add">
-                            <img src="./assets/images/icons/icon-shopping-bag.png" />
-                        </div>
-                    </div>
-                </div>
-                <div className="products-cell">
-                    <img src="./assets/images/products/products-wingspan.png" />
-                    <p className="products-name">Wingspan</p>
-                    <div className="products-price">
-                        <p className="price">69,99$</p>
-                        <input type="number" value="1" id="quantity" />
-                        <div className="btn-add">
-                            <img src="./assets/images/icons/icon-shopping-bag.png" />
-                        </div>
-                    </div>
-                </div>
+                {listProducts}
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default Products;
